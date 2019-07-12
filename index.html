@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="img/banner.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">MINVU POSTULACIONES</a>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Datos</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#">Cargas</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#">Postulación</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#">Seleccionados</a>
+                            </li>                                                                                     
+                            <!--
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="col-lg-12">
+                <div class="card text-black  mb-3">
+                    <div class="card-header bg-primary">Datos Postulante</div>
+                    <div class="card-body">
+                        <h5>Identificacion del Postulante</h5>
+                        <label for="">Ingrese su Rut</label>
+                        <input type="text" name="rutPostulante" placeholder="Ej: 12345678-9" class="form-control" maxlength="10" autocomplete="off" required>
+                        <br>
+                        <label for="">Ingrese sus nombres</label>
+                        <input type="text" name="nombresPostulante" class="form-control" autocomplete="off" required>
+                        <br>
+                        <label for="">Ingrese su apellido Paterno</label>
+                        <input type="text" name="apPaterno" class="form-control" autocomplete="off" required>    
+                        <label for="">Ingrese su apellido Materno</label>
+                        <input type="text" name="apMaterno" class="form-control" autocomplete="off" required>
+                        <label for="">Ingrese fecha de Nacimiento</label>
+                        <input type="date" name="fechaNac" class="form-control" autocomplete="off" required>
+                        <br>
+                        <label for="">Estado Civil</label>
+                        <select name="estadoCivil" id="" class="form-control">
+                            <option value="CASADO">CASADO</option>
+                            <option value="CONVIVIENTE CIVIL">CONVIVIENTE CIVIL</option>
+                            <option value="SOLTERO">SOLTERO</option>
+                            <option value="DIVORCIADO">DIVORCIADO</option>
+                            <option value="VIUDO">VIUDO</option>
+                        </select>
+                        <br>
+                        <input type="hidden" name="tipoPostulante" value="POSTULANTE">
+                        <h5>Datos Financieros</h5>
+                        <br>
+                        <label for="">Sueldo Liquido</label>
+                        <input type="number" class="form-control" name="SueldoPostulante" min="1200000" autocomplete="off" required >
+                        <br>
+                        <label for="">Total Ahorro</label>
+                        <input type="number" class="form-control" min="0" name="ahorroPostulante" autocomplete="off" required>
+                        <br>
+                        <h5>Acreditación</h5>
+                        <br>
+                        <label for="">¿Tiene Cargas?</label>
+                        <input type="checkbox" name="tieneCargas" class="form-control" required>
+                        <br>
+                        <label for="">¿Acredita cargas?</label>
+                        <input type="checkbox" name="acreditaCargas" class="form-control" required>
+                        <br>
+                        <label for="">¿Pertenece a un pueblo indígena u originario?</label>
+                        <input type="checkbox" name="esIndigena" class="form-control" required>
+                        <br>
+                        <label for="">¿Acredita su pueblo indígena u originario?</label>
+                        <input type="checkbox" name="acreditaRaiz" class="form-control" required>
+                        <br>
+                        <h5>Estudios</h5>
+                        <br>
+                        <label for="">Título</label>
+                        <input type="text" name="titulo" class="form-control" autocomplete="off" required>
+                        <br>
+                        <label for="">Nivel</label>
+                        <select name="naturaleza" id="" class="form-control" required>
+                            <option value="TÉCNICO">TÉCNICO</option>
+                            <option value="PROFESIONAL">PROFESIONAL</option>
+                        </select>
+                        <br>
+                        <h5>Vivienda</h5>
+                        <br>
+                        <label for="">Región</label>
+                        <select name="regiones" id="" class="form-control">
+                            <option value="REGION"></option>
+                        </select>
+                        <br>
+                        <label for="">Tramo</label>
+                        <select name="tramo" id="" class="form-control">
+                            <option value="tramo1">1</option>
+                            <option value="tramo2">2</option>
+                            <option value="tramo3">3</option>
+                        </select>
+                        <br>
+                        <label for="">Fecha de Adquisición</label>
+                        <input type="date" name="fechaAdqui" class="form-control" autocomplete="off" required>
+                        <br>
+                        <label for="">Dirección</label>
+                        <input type="text" name="direccion" class="form-control" autocomplete="off" required>
+                        <br>
+                        <label for="">Tipo Vivienda</label>
+                        <select name="tipoVivienda" id="" class="form-control">
+                            <option value="CASA">CASA</option>
+                            <option value="DEPARTAMENTO">DEPARTAMENTO</option>
+                        </select>
+                        <br>
+                        <label for="">¿Cumple las condiciones?</label>
+                        <input type="checkbox" name="cumpleCondicion" class="form-control" required>
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary form-control">Postular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
